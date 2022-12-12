@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Profil Saya</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class = "profil" src=profil.jpeg alt="" width="200px" />
+      <h1>Hay, saya Tara Mozart
+        <img class = "mode" src=light-mode.png id="icon" alt="icon">
+      </h1>
+      
+      <p>seorang mahasiswa</p>
+    </div>
+    <section class = "main">
+      <li ><a href="">Tentang saya</a></li>
+      <li ><a href="">Pengalaman Kerja</a></li>
+      <li ><a href="">Hubungi saya</a></li>
+    
+  </section >
+  <div class="container-bagan">
+    <h2>Tentang saya</h2>
+  <div class = "text">
+      <p class = "desc">
+        Hai, nama saya Tara Nadani Mozart, saya mahasiswa dari INSTITUT TEKNOLOGI SUMATERA
+        dengan program studi Teknik Informatika , saya lahir pada tanggal 8 February 2002, hobi saya adalah bermain game pubg mobile.
+      </p>
+      <iframe width="420" height="240"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      <p class="noted">Favorite playlist...</p>
+    </iframe>
+    
+  </div>
+</div>
+  <section class = "text-2">
+    <h2 >Pengalaman Saya</h2>
+    <table class = "container" >
+      <tr>
+        <th rowspan="2">no</th>
+        <th rowspan="2">Sekolah</th>
+        <th rowspan="2">Alamat</th>
+        <th colspan="2">Tahun</th>
+      </tr>
+      <tr>
+        <th>mulai</th>
+        <th>selesai</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>SDN 01 Bandar Buat </td>
+        <td>Bandar Buat, Padang</td>
+        <td>2008</td>
+        <td>2014</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SMP Dian Andalas</td>
+        <td>Gadut, Padang</td>
+        <td>2014</td>
+        <td>2017</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>MAN 2 Padang</td>
+        <td>Gunung Pangilun, Padang</td>
+        <td>2017</td>
+        <td>2020</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Institut Teknologi Sumatera</td>
+        <td>Lampung</td>
+        <td>2020</td>
+        <td>Berlangsung</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class = "text-3">
+    <h2 >Hubungi saya</h2>
+    <div class = "container-2">
+    <p class="name">nama : <input type="text" name="" id="" /></p>
+    <p>sudah liat biodata saya?</p>
+    <input type="radio" />sudah
+    <br />
+    <input type="radio" />belum
+    <p>
+      <input type="checkbox" name="" id="" />ini
+      <br />
+      <input type="checkbox" name="" id="" />itu
+      <br />
+      <input type="checkbox" name=""id="">disana
+    </p>
+    <button type="submit">kirim</button>
+  </div>
+  
+  <footer>INI AKHIR</footer>
+  </section>
+
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+    document.body.classList.toggle("lightmode");
+    if (document.body.classList.contains("lightmode")) {
+        icon.src = "light-mode.png" ;
+    } else {
+        icon.src = "night-mode.png";
+    }
+}
+  </script>
+  </body>
+</html>
